@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -451,4 +451,4 @@ console.log("Welcome to Shelby's world.");
 </script>
 
 </body>
-</html>70px 
+</html>
