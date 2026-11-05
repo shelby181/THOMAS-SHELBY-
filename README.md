@@ -73,7 +73,7 @@ nav a:hover {
         rgba(0,0,0,0.45),
         rgba(0,0,0,0.88)
     ),
-    url("./shelby.jpg");
+    url("./881efc980698fd4e33b79e7abb40cee7;.jpg");
 
     background-size: cover;
     background-position: center;
