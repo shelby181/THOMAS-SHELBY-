@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -68,12 +68,12 @@ nav a:hover {
     text-align: center;
     padding: 25px;
 
-    background:
+    background-image:
     linear-gradient(
-        rgba(0,0,0,0.45),
-        rgba(0,0,0,0.88)
+        rgba(0,0,0,0.40),
+        rgba(0,0,0,0.85)
     ),
-    url("./881efc980698fd4e33b79e7abb40cee7;.jpg");
+    url("./881efc980698fd4e33b79e7abb40cee7.jpg");
 
     background-size: cover;
     background-position: center;
@@ -158,7 +158,6 @@ section p {
         auto-fit,
         minmax(220px, 1fr)
     );
-
     gap: 25px;
     margin-top: 40px;
 }
@@ -258,7 +257,6 @@ footer {
 
 </header>
 
-
 <!-- HOME -->
 
 <div class="hero" id="home">
@@ -276,7 +274,6 @@ footer {
     </a>
 
 </div>
-
 
 <!-- ABOUT -->
 
@@ -299,7 +296,6 @@ footer {
 
 </section>
 
-
 <!-- MINDSET -->
 
 <section class="dark" id="mindset">
@@ -317,7 +313,6 @@ footer {
     </button>
 
 </section>
-
 
 <!-- PROJECTS -->
 
@@ -348,7 +343,6 @@ footer {
 
 </section>
 
-
 <!-- SECRET MESSAGE -->
 
 <section class="dark">
@@ -366,89 +360,3 @@ footer {
         The world belongs to those
         who have the courage to create
         their own path.
-
-    </p>
-
-</section>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-    © 2026 SHELBY.
-
-    <br><br>
-
-    BY ORDER OF THE PEAKY BLINDERS.
-
-</footer>
-
-
-<!-- JAVASCRIPT -->
-
-<script>
-
-const quotes = [
-
-    '"Sometimes silence is the best answer."',
-
-    '"Fear is not an option. Discipline is."',
-
-    '"A man must make his own future."',
-
-    '"Think quietly. Act wisely. Move forward."',
-
-    '"Your ambition must be stronger than your fear."',
-
-    '"Stay focused. Your time will come."'
-
-];
-
-let index = 0;
-
-function changeQuote() {
-
-    index++;
-
-    if (index >= quotes.length) {
-        index = 0;
-    }
-
-    document.getElementById("quote").innerText =
-    quotes[index];
-
-}
-
-function revealMessage() {
-
-    const message = document.getElementById("secret");
-
-    message.style.display = "block";
-
-}
-
-window.addEventListener("scroll", function() {
-
-    const header = document.querySelector("header");
-
-    if (window.scrollY > 50) {
-
-        header.style.borderBottom =
-        "1px solid #922727";
-
-    } else {
-
-        header.style.borderBottom =
-        "1px solid #292020";
-
-    }
-
-});
-
-console.log("Welcome to Shelby's world.");
-
-</script>
-
-</body>
-</html>
