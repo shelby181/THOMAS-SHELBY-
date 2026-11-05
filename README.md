@@ -10,7 +10,7 @@
 
 .box{
 
-background-color: pink;
+background-color: red;
 
 width: 300px;
 
