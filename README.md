@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SHELBY | The Mindset</title>
+<title>SHELBY | The Personal Universe</title>
 
 <style>
+
 * {
     margin: 0;
     padding: 0;
@@ -20,36 +22,42 @@ body {
     font-family: Georgia, serif;
 }
 
+/* HEADER */
+
 header {
     position: fixed;
-    width: 100%;
     top: 0;
-    padding: 22px 8%;
+    width: 100%;
+    padding: 20px 8%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(0,0,0,.95);
+    background: rgba(0,0,0,0.88);
+    backdrop-filter: blur(10px);
     z-index: 1000;
+    border-bottom: 1px solid #292020;
 }
 
 .logo {
     font-size: 25px;
     letter-spacing: 6px;
-    color: #b5b5b5;
+    color: #ddd;
 }
 
 nav a {
     color: #ccc;
     text-decoration: none;
-    margin-left: 20px;
-    font-size: 12px;
+    margin-left: 18px;
+    font-size: 11px;
     letter-spacing: 2px;
-    transition: .3s;
+    transition: .4s;
 }
 
 nav a:hover {
     color: #a52a2a;
 }
+
+/* HERO */
 
 .hero {
     min-height: 100vh;
@@ -59,19 +67,28 @@ nav a:hover {
     align-items: center;
     text-align: center;
     padding: 25px;
+
     background:
-    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.95)),
-    radial-gradient(circle at center,#292020,#080808 70%);
+    linear-gradient(
+        rgba(0,0,0,0.45),
+        rgba(0,0,0,0.88)
+    ),
+    url("./shelby.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .hero h1 {
-    font-size: clamp(55px,12vw,120px);
+    font-size: clamp(55px, 12vw, 120px);
     letter-spacing: 15px;
-    animation: fade 2s ease;
+    text-shadow: 0 5px 25px black;
+    animation: appear 2s ease;
 }
 
 .hero p {
-    color: #aaa;
+    color: #ddd;
     letter-spacing: 5px;
     margin-top: 20px;
 }
@@ -83,15 +100,17 @@ nav a:hover {
     margin: 30px auto;
 }
 
+/* BUTTON */
+
 .btn {
     padding: 15px 35px;
     border: 1px solid #922727;
     color: white;
+    background: transparent;
     text-decoration: none;
     letter-spacing: 3px;
-    transition: .4s;
     cursor: pointer;
-    background: transparent;
+    transition: .4s;
 }
 
 .btn:hover {
@@ -99,13 +118,15 @@ nav a:hover {
     box-shadow: 0 0 20px #922727;
 }
 
+/* SECTIONS */
+
 section {
     padding: 110px 10%;
     text-align: center;
 }
 
-h2 {
-    font-size: 32px;
+section h2 {
+    font-size: 30px;
     letter-spacing: 7px;
 }
 
@@ -120,16 +141,24 @@ section p {
     background: #121212;
 }
 
+/* QUOTES */
+
 .quote {
-    font-size: 25px;
+    font-size: 24px;
     font-style: italic;
     color: #ddd;
     margin: 30px auto;
 }
 
+/* PROJECTS */
+
 .projects {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+
     gap: 25px;
     margin-top: 40px;
 }
@@ -151,12 +180,16 @@ section p {
     letter-spacing: 3px;
 }
 
+/* SECRET */
+
 .hidden-message {
     display: none;
     margin-top: 30px;
     color: #c78b8b;
-    animation: fade 1s ease;
+    animation: appear 1s ease;
 }
+
+/* FOOTER */
 
 footer {
     background: #050505;
@@ -167,37 +200,53 @@ footer {
     letter-spacing: 3px;
 }
 
-@keyframes fade {
+/* ANIMATION */
+
+@keyframes appear {
     from {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-@media(max-width:600px) {
+/* MOBILE */
+
+@media(max-width: 600px) {
+
     header {
         padding: 18px 4%;
     }
 
     nav a {
-        margin-left: 7px;
+        margin-left: 6px;
         font-size: 9px;
+        letter-spacing: 1px;
     }
 
     .hero h1 {
         letter-spacing: 7px;
     }
+
+    section {
+        padding: 85px 7%;
+    }
+
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- NAVIGATION -->
+
 <header>
+
     <div class="logo">SHELBY.</div>
 
     <nav>
@@ -206,7 +255,11 @@ footer {
         <a href="#mindset">MINDSET</a>
         <a href="#projects">PROJECTS</a>
     </nav>
+
 </header>
+
+
+<!-- HOME -->
 
 <div class="hero" id="home">
 
@@ -224,6 +277,9 @@ footer {
 
 </div>
 
+
+<!-- ABOUT -->
+
 <section id="about">
 
     <h2>WHO AM I?</h2>
@@ -232,12 +288,19 @@ footer {
 
     <p>
         I am not here to impress anyone.
+
         I am here to build something meaningful.
+
         My journey is private, my ambitions are big,
         and my silence has a purpose.
+
+        I believe in discipline, patience and ambition.
     </p>
 
 </section>
+
+
+<!-- MINDSET -->
 
 <section class="dark" id="mindset">
 
@@ -246,8 +309,7 @@ footer {
     <div class="line"></div>
 
     <p class="quote" id="quote">
-        "You can change what you do,
-        but you can't change what you want."
+        "Sometimes silence is the most powerful answer."
     </p>
 
     <button class="btn" onclick="changeQuote()">
@@ -255,6 +317,9 @@ footer {
     </button>
 
 </section>
+
+
+<!-- PROJECTS -->
 
 <section id="projects">
 
@@ -283,6 +348,9 @@ footer {
 
 </section>
 
+
+<!-- SECRET MESSAGE -->
+
 <section class="dark">
 
     <h2>ONE LAST THING</h2>
@@ -294,11 +362,17 @@ footer {
     </button>
 
     <p class="hidden-message" id="secret">
-        "The world belongs to those
-        who have the courage to create their own path."
+
+        The world belongs to those
+        who have the courage to create
+        their own path.
+
     </p>
 
 </section>
+
+
+<!-- FOOTER -->
 
 <footer>
 
@@ -310,14 +384,25 @@ footer {
 
 </footer>
 
+
+<!-- JAVASCRIPT -->
+
 <script>
 
 const quotes = [
-    '"You can change what you do, but you can’t change what you want."',
+
     '"Sometimes silence is the best answer."',
+
     '"Fear is not an option. Discipline is."',
+
     '"A man must make his own future."',
-    '"Think quietly. Act wisely. Move forward."'
+
+    '"Think quietly. Act wisely. Move forward."',
+
+    '"Your ambition must be stronger than your fear."',
+
+    '"Stay focused. Your time will come."'
+
 ];
 
 let index = 0;
@@ -326,23 +411,44 @@ function changeQuote() {
 
     index++;
 
-    if(index >= quotes.length) {
+    if (index >= quotes.length) {
         index = 0;
     }
 
-    document.getElementById("quote").innerText = quotes[index];
+    document.getElementById("quote").innerText =
+    quotes[index];
 
 }
 
 function revealMessage() {
 
-    document.getElementById("secret").style.display = "block";
+    const message = document.getElementById("secret");
+
+    message.style.display = "block";
 
 }
+
+window.addEventListener("scroll", function() {
+
+    const header = document.querySelector("header");
+
+    if (window.scrollY > 50) {
+
+        header.style.borderBottom =
+        "1px solid #922727";
+
+    } else {
+
+        header.style.borderBottom =
+        "1px solid #292020";
+
+    }
+
+});
 
 console.log("Welcome to Shelby's world.");
 
 </script>
 
 </body>
-</html>
+</html>70px 
