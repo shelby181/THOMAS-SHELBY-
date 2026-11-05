@@ -1,164 +1,58 @@
-# Ma
-
-
 <!DOCTYPE html>
-
-
 
 <html>
 
-
-
 <head>
 
+<title>CSS</title>
 
-<meta charset="utf-8" />
+<style>
 
-<title>Page Title</title>
+.box{
 
-<link rel="stylesheet" href="style.css">
+background-color: pink;
 
-8
+width: 300px;
 
-<script src="javascript.js"></script>
+height: 200px;
+
+margin: auto;
+
+font-size: 40px;
+
+text-align: center;
+
+}
+
+.box:hover{
+
+background-color: cyan;
+
+}
+
+h1, h2{
+
+color: black;
+
+text-align: center;
+
+}
+
+</style>
 
 </head>
 
-9
-
 <body>
 
-10
+<h1>Simplilearn</h1>
 
-<header>
+<h2>:hover Pseudo-class</h2>
 
-<img id="logo" src="" alt="" />
+<div class="box">
 
-11
+My color changes if you hover over me!
 
-<nav>
-
-12
-
-<ol>
-
-14
-
-<li><a href="">Link 1</a></li>
-
-13
-
-<li><a href="">Link 2</a></li>
-
-15
-
-</ol>
-
-17
-
-16
-
-</nav>
-
-18
-
-</header>
-
-19
-
-20
-
-<section>
-
-<article>
-
-21
-
-<h1>Article Title</h1>
-
-22
-
-<p>Article content</p>
-
-23
-
-</article>
-
-24
-
-</section>
-
-25
-
-<aside>
-
-26
-
-<h1>Aside Title</h1>
-
-27
-
-<p>Aside content</p>
-
-28
-
-</aside>
-
-29
-
-30
-
-<footer>
-
-31
-
-<nav>
-
-33
-
-<ol>
-
-32
-
-<li><a href="">Link 1</a></li>
-
-<li><a href="">Link 2</a></li>
-
-34
-
-</ol>
-
-35
-
-36
-
-37
-
-38
-
-</nav>
-
-<p class="copyright">Copyright &copy; 2013 Company</p>
-
-<address>
-
-<span>123 street, City, Ohio 12345</span>
-
-39
-
-40
-
-<span>United States</span>
-
-</address>
-
-41
-
-42
-
-</footer>
-
-43
+</div>
 
 </body>
 
