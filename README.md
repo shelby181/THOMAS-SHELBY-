@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 *Peaky blinders* 
 <html lang="en">
 
